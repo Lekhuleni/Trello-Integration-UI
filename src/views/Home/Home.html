@@ -1,0 +1,16 @@
+<v-container fluid class="pa-0">
+  <v-row no-gutters>
+    <v-col>
+      <div class="top-div text-center py-4">
+        <p class="text-sm-h4 font-weight-bold">The Pizza Project</p>
+      </div>
+    </v-col>
+  </v-row>
+  <v-row no-gutters>
+    <v-col cols="12" class="d-flex flex-row flex-wrap justify-space-around pa-5 ma-5">
+      <div v-for="list in lists">
+        <ListBlock :list="list" />
+      </div>
+    </v-col>
+  </v-row>
+</v-container>
